@@ -1,0 +1,83 @@
+.keys {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: repeat(5, 90px);
+    justify-content: center;
+    gap: 10px;
+
+    @include mq(tablet) {
+        grid-template-rows: repeat(5, 100px);
+    }
+
+    @include mq(desktopS){
+        grid-template-rows: repeat(5, 35px);
+
+    }
+
+    @include mq(desktopM){
+        grid-template-rows: repeat(5, 40px);
+    }
+
+    @include mq(desktopL){
+        grid-template-rows: repeat(5, 45px);
+    }
+
+    @include mq(4k){
+        grid-template-rows: repeat(5, 50px);
+    }
+
+    button {
+        font-size: 3rem;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        color: white;
+        transition: all .2s ease-in-out;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #212112;
+        }
+
+        @include mq(tablet) {
+            font-size: 4rem;
+        }
+
+        @include mq(desktopS){
+            font-size: 2rem;
+        }
+
+        @include mq(desktopM){
+            font-size: 2.5rem;
+        }
+
+        @include mq(desktopL){
+            font-size: 3rem;
+        }
+
+        @include mq(4k){
+            font-size: 3.5rem;
+        }
+    }
+
+    .equal {
+        grid-column: 4;
+        grid-row: 3/6;
+        background-color: blue;
+
+        &:hover {
+            background-color: #1a1aff;
+        }
+    }
+
+    .clear {
+
+        background-color: red;
+
+        &:hover {
+            background-color: #ff1a1a;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.app{
+    @include flex(center,center,column,null);
+    min-height: 100vh;
+    background-color: #212112;
+
+    @include mq(mobile){
+        background-color: #111109;
+    }
+
+    @include mq(tablet){
+        background-color: #111109;
+    }
+}
